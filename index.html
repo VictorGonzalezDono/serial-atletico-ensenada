@@ -62,60 +62,45 @@
     </div>
 </section>
 
-<section class="py-12 bg-black overflow-hidden">
-    <div class="px-6 mb-6 flex justify-between items-end">
-        <div>
-            <h3 class="font-black italic text-2xl text-white uppercase tracking-tighter">Etapas del Serial 2026</h3>
-            <p class="text-rose-600 font-bold text-xs uppercase tracking-widest">10 Carreras · 1 Solo Objetivo</p>
-        </div>
-        <div class="flex gap-2">
-            <button onclick="scrollCarrusel(-300)" class="bg-gray-900 hover:bg-rose-600 text-white p-2 rounded-full transition">←</button>
-            <button onclick="scrollCarrusel(300)" class="bg-gray-900 hover:bg-rose-600 text-white p-2 rounded-full transition">→</button>
-        </div>
+<section class="py-12 bg-black border-b border-gray-900">
+    <div class="px-6 mb-8">
+        <h3 class="font-sport text-2xl italic font-black text-white">ETAPAS <span class="text-rose-600">2026</span></h3>
     </div>
 
-    <div id="carrusel" class="flex overflow-x-auto gap-6 px-6 scrollbar-hide snap-x snap-mandatory scroll-smooth pb-6" style="scrollbar-width: none;">
-        
-        <div class="min-w-[280px] md:min-w-[320px] snap-center bg-gray-900 rounded-2xl p-6 border-b-4 border-rose-600">
-            <span class="text-rose-600 font-black text-4xl opacity-20">01</span>
-            <p class="text-gray-500 font-bold text-xs mt-2 uppercase">15 Marzo · Finalizada</p>
-            <h4 class="text-xl font-bold text-white mt-1">5K Recreativo Puerto Ensenada</h4>
-            <div class="mt-4 flex items-center justify-between">
-                <span class="text-[10px] bg-gray-800 text-gray-400 px-2 py-1 rounded">Ruta: Malecón</span>
-                <button class="text-rose-600 font-bold text-xs hover:underline">Ver Resultados</button>
+    <div id="carrusel" class="flex overflow-x-auto gap-4 px-6 scrollbar-hide snap-x snap-mandatory pb-4">
+        <div class="min-w-[260px] snap-center bg-gray-900/50 p-6 rounded-3xl border border-gray-800">
+            <div class="flex justify-between items-start mb-4">
+                <span class="text-gray-700 font-sport text-3xl">01</span>
+                <span class="bg-gray-800 text-gray-500 text-[9px] px-2 py-1 rounded">FINALIZADA</span>
             </div>
+            <h4 class="font-bold text-white leading-tight mb-4">5K Recreativo Malecón</h4>
+            <button class="text-rose-600 font-black text-xs uppercase border-b-2 border-rose-600 pb-1">Ver Fotos</button>
         </div>
 
-        <div class="min-w-[280px] md:min-w-[320px] snap-center bg-white rounded-2xl p-6 border-b-4 border-rose-600 transform scale-105 shadow-2xl">
-            <span class="text-rose-600 font-black text-4xl opacity-20">02</span>
-            <p class="text-rose-600 font-bold text-xs mt-2 uppercase underline">Próxima: 20 Mayo</p>
-            <h4 class="text-xl font-bold text-black mt-1">10K Serial - Etapa Valle</h4>
-            <div class="mt-4 flex items-center justify-between">
-                <span class="text-[10px] bg-gray-200 text-gray-600 px-2 py-1 rounded">Ruta: Viñedos</span>
-                <button class="bg-rose-600 text-white px-4 py-2 rounded-lg font-bold text-xs">Inscribirme</button>
+        <div class="min-w-[260px] snap-center bg-rose-600 p-6 rounded-3xl shadow-lg shadow-rose-600/30">
+            <div class="flex justify-between items-start mb-4 text-white">
+                <span class="font-sport text-3xl opacity-50">02</span>
+                <span class="bg-white/20 text-white text-[9px] px-2 py-1 rounded">MAYO 20</span>
             </div>
+            <h4 class="font-bold text-white leading-tight mb-4 text-lg">10K Ruta del Valle de Guadalupe</h4>
+            <button class="bg-white text-rose-600 font-black text-[10px] px-4 py-2 rounded-full uppercase">Comprar Fotos</button>
         </div>
 
-        <div class="min-w-[280px] md:min-w-[320px] snap-center bg-gray-900 rounded-2xl p-6 border-b-4 border-gray-700">
-            <span class="text-gray-700 font-black text-4xl opacity-20">03</span>
-            <p class="text-gray-500 font-bold text-xs mt-2 uppercase">Junio (Fecha por definir)</p>
-            <h4 class="text-xl font-bold text-white mt-1">5K Nocturna Centenario</h4>
-            <div class="mt-4 flex items-center justify-between text-gray-600 font-bold text-xs">
-                <span>Próximamente</span>
-            </div>
-        </div>
-
-        </div>
+        <script>
+            const etapas = ["Nocturna Centenario", "Carrera del Bombero", "Medio Maratón Ens", "5K Playa Hermosa", "Carrera del Pavo", "10K Aniversario", "Carrera de la Mujer", "Santa Run"];
+            const carrusel = document.getElementById('carrusel');
+            etapas.forEach((nombre, i) => {
+                const card = `
+                <div class="min-w-[260px] snap-center bg-gray-900/30 p-6 rounded-3xl border border-gray-800 opacity-60">
+                    <span class="text-gray-800 font-sport text-3xl">${i+3 < 10 ? '0'+(i+3) : i+3}</span>
+                    <h4 class="font-bold text-gray-600 leading-tight mt-4">${nombre}</h4>
+                    <p class="text-[10px] text-gray-700 mt-2 uppercase font-bold">Próximamente</p>
+                </div>`;
+                carrusel.innerHTML += card;
+            });
+        </script>
+    </div>
 </section>
-
-<script>
-    function scrollCarrusel(valor) {
-        document.getElementById('carrusel').scrollBy({
-            left: valor,
-            behavior: 'smooth'
-        });
-    }
-</script>
     <section class="py-16 bg-gray-900 px-6 overflow-hidden">
         <p class="text-center text-xs font-bold text-gray-500 uppercase mb-8 tracking-widest">Patrocinadores Oficiales</p>
         <div class="flex justify-around items-center opacity-30 grayscale hover:grayscale-0 transition space-x-8">
