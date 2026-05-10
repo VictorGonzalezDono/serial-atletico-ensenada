@@ -18,7 +18,7 @@
 
     <nav class="sticky top-0 z-[100] bg-black/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <h1 class="font-sport text-xl italic tracking-tighter text-white">SERIAL ATLÉTICO <span class="text-rose-600">DE ENSENADA</span></h1>
+            <h1 class="font-sport text-xl italic tracking-tighter text-white uppercase">SERIAL ATLÉTICO <span class="text-rose-600">DE ENSENADA</span></h1>
             <div class="flex gap-4">
                 <button class="text-[10px] font-bold uppercase tracking-widest border border-white/20 px-4 py-2 rounded-full hover:bg-white hover:text-black transition">Resultados</button>
             </div>
@@ -29,9 +29,9 @@
         <div class="max-w-7xl mx-auto">
             <div class="relative rounded-[2rem] overflow-hidden bg-gradient-to-r from-rose-900/40 to-black border border-white/10 p-8 md:p-16">
                 <div class="relative z-10 md:w-2/3">
-                    <span class="inline-block bg-rose-600 text-white text-[10px] font-black px-3 py-1 rounded-full mb-6 animate-pulse">PRÓXIMA ETAPA</span>
-                    <h2 class="font-sport text-4xl md:text-7xl italic mb-4 leading-none text-white">6K <span class="text-rose-600 underline decoration-white/20 underline-offset-8 text-white">CROSS</span> COUNTRY</h2>
-                    <p class="text-gray-400 font-semibold mb-8 text-lg uppercase">05 DE ABRIL, 2026 · 8:00 AM · SAN ANTONIO DE LAS MINAS</p>
+                    <span class="inline-block bg-rose-600 text-white text-[10px] font-black px-3 py-1 rounded-full mb-6 animate-pulse uppercase">Próxima Etapa</span>
+                    <h2 class="font-sport text-4xl md:text-7xl italic mb-4 leading-none text-white uppercase">6K <span class="text-rose-600 underline decoration-white/20 underline-offset-8 text-white">Cross</span> Country</h2>
+                    <p class="text-gray-400 font-semibold mb-8 text-lg uppercase tracking-tighter">05 de Mayo, 2026 · 8:00 AM · San Antonio de las Minas</p>
                     <div class="flex flex-wrap gap-4">
                         <button class="bg-white text-black font-black px-10 py-4 rounded-2xl hover:bg-rose-600 hover:text-white transition-all transform hover:scale-105 uppercase tracking-widest">Inscribirme Ahora</button>
                         <button class="bg-white/10 backdrop-blur-sm text-white font-bold px-8 py-4 rounded-2xl border border-white/20 hover:bg-white/20">Ver Ruta</button>
@@ -45,7 +45,7 @@
     <section class="py-12 bg-black/50 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-center mb-8">
-                <h3 class="font-sport text-xl italic uppercase text-white">BIBLIOTECA <span class="text-rose-600">RECIENTE</span></h3>
+                <h3 class="font-sport text-xl italic uppercase text-white tracking-tight">Biblioteca <span class="text-rose-600">Reciente</span></h3>
                 <a href="#" class="text-xs font-bold text-gray-500 hover:text-white uppercase tracking-widest">Ver toda la galería →</a>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -53,8 +53,6 @@
                 <div class="aspect-square bg-zinc-900 rounded-xl overflow-hidden group cursor-pointer"><img src="serial2.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
                 <div class="aspect-square bg-zinc-900 rounded-xl overflow-hidden group cursor-pointer"><img src="serial3.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
                 <div class="aspect-square bg-zinc-900 rounded-xl overflow-hidden group cursor-pointer"><img src="serial4.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="aspect-square bg-zinc-900 rounded-xl overflow-hidden group cursor-pointer"><img src="serial5.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
                 <div class="aspect-square bg-zinc-900 rounded-xl overflow-hidden group cursor-pointer"><img src="serial6.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
                 <div class="aspect-square bg-zinc-900 rounded-xl overflow-hidden group cursor-pointer"><img src="serial7.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
@@ -63,10 +61,10 @@
         </div>
     </section>
 
-    <section class="py-24 px-6 relative overflow-hidden">
+    <section class="py-24 px-6 relative overflow-hidden bg-zinc-950">
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <h2 class="font-sport text-4xl md:text-6xl italic mb-6 text-white text-white">¿TE ENCONTRAMOS <span class="text-rose-600 text-white">EN 1 SEGUNDO?</span></h2>
-            <p class="text-gray-400 text-lg mb-8 italic">La primera plataforma con IA en Baja California para encontrar tus fotos de carrera al instante.</p>
+            <h2 class="font-sport text-4xl md:text-6xl italic mb-6 text-white uppercase">¿Te encontramos <span class="text-rose-600">en 1 segundo?</span></h2>
+            <p class="text-gray-400 text-lg mb-8 italic">Tecnología de reconocimiento facial aplicada al deporte en Ensenada.</p>
             
             <input type="file" id="selfieInput" accept="image/*" class="hidden" onchange="subirYSearchear(event)">
             
@@ -79,86 +77,76 @@
 
                 <div class="text-5xl mb-4 group-hover:scale-110 transition duration-300">📸</div>
                 <h4 class="text-xl font-bold mb-2">Subir Selfie de Búsqueda</h4>
-                <p class="text-gray-500 text-sm italic">Click para abrir cámara o galería</p>
-                <div id="btnText" class="mt-8 py-3 bg-rose-600 text-white font-black rounded-xl shadow-lg shadow-rose-600/20 uppercase tracking-widest text-xs">Probar Buscador</div>
+                <p class="text-gray-500 text-sm italic">Haz clic para abrir tu cámara o galería</p>
+                <div id="btnText" class="mt-8 py-3 bg-rose-600 text-white font-black rounded-xl shadow-lg shadow-rose-600/20 uppercase tracking-widest text-xs">Activar Buscador IA</div>
             </div>
         </div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-rose-600/10 rounded-full blur-[120px] -z-10"></div>
     </section>
 
-    <div id="resultadosBusqueda" class="max-w-7xl mx-auto px-6 mb-20 hidden">
-        <h3 class="font-sport text-xl mb-6 text-rose-600 italic uppercase">FOTOS ENCONTRADAS:</h3>
+    <div id="resultadosBusqueda" class="max-w-7xl mx-auto px-6 py-20 hidden border-t border-white/5 bg-black">
+        <h3 class="font-sport text-xl mb-6 text-rose-600 italic uppercase">Resultados de Reconocimiento:</h3>
         <div id="gridResultados" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
     </div>
 
     <section class="py-12 bg-zinc-950/50">
-        <div class="px-6 mb-8 max-w-7xl mx-auto flex justify-between items-end text-white text-white text-white text-white">
-            <h3 class="font-sport text-2xl italic">ETAPAS 5K <span class="text-rose-600">2026</span></h3>
-            <p class="text-gray-500 text-xs font-bold uppercase tracking-widest hidden md:block">Desliza para explorar →</p>
+        <div class="px-6 mb-8 max-w-7xl mx-auto flex justify-between items-end">
+            <h3 class="font-sport text-2xl italic uppercase text-white">Etapas 5K <span class="text-rose-600">2026</span></h3>
+            <p class="text-gray-500 text-xs font-bold uppercase tracking-widest hidden md:block italic">Desliza para explorar etapas →</p>
         </div>
         <div id="carrusel" class="flex overflow-x-auto gap-6 px-6 md:px-24 scrollbar-hide snap-x snap-mandatory pb-8"></div>
     </section>
 
     <section class="py-16 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-6">
-            <p class="text-center text-[10px] font-black text-zinc-600 uppercase tracking-[0.3em] mb-12 italic">Aliados Estratégicos del Serial 2026</p>
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-[10px] font-black text-zinc-600 uppercase tracking-[0.3em] mb-12 italic">Aliados Estratégicos del Serial 2026</p>
             <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-20 grayscale transition-all hover:grayscale-0 hover:opacity-100">
                 <span class="font-sport text-2xl italic">SPONSOR_1</span>
                 <span class="font-sport text-2xl italic text-white">SPONSOR_2</span>
-                <span class="font-sport text-2xl italic text-rose-600 text-white">VALLE_PRO</span>
+                <span class="font-sport text-2xl italic text-rose-600 text-white uppercase">Valle_Pro</span>
                 <span class="font-sport text-2xl italic text-white">SPONSOR_4</span>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 px-6 text-center text-zinc-700 border-t border-white/5">
+    <footer class="py-12 px-6 text-center text-zinc-700 border-t border-white/5 bg-black">
         <p class="text-[10px] font-bold uppercase tracking-widest">© 2026 Powered by TU SUCURSAL DIGITAL ENSENADA - AGENCIA PARA EL DESARROLLO</p>
     </footer>
 
     <script>
-        // Generador de Etapas
+        // Carrusel Data
         const etapas = [
             {id: '01', nombre: '5K Estero Beach Resort', fecha: 'Finalizada', status: 'past', img: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=60'},
-            {id: '02', nombre: '5K Playa Hermosa Blrd Costero', fecha: '20 Mayo', status: 'next', img: 'https://images.unsplash.com/photo-1543351611-58f69d7c1781?auto=format&fit=crop&w=400&q=60'},
-            {id: '03', nombre: '6K Cross Crountry Rancho Bernaldez', fecha: 'Junio', status: 'future', img: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=400&q=60'},
+            {id: '02', nombre: '5K Playa Hermosa Costero', fecha: '20 Mayo', status: 'next', img: 'https://images.unsplash.com/photo-1543351611-58f69d7c1781?auto=format&fit=crop&w=400&q=60'},
+            {id: '03', nombre: '6K Cross Rancho Bernaldez', fecha: 'Junio', status: 'future', img: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=400&q=60'},
             {id: '04', nombre: '5K 10 de Mayo', fecha: 'Agosto', status: 'future', img: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=400&q=60'},
-            {id: '05', nombre: 'Medio Maratón Ens', fecha: 'Septiembre', status: 'future', img: 'https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?auto=format&fit=crop&w=400&q=60'},
-            {id: '06', nombre: '5K Playa Hermosa', fecha: 'Octubre', status: 'future', img: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=400&q=60'},
-            {id: '07', nombre: 'Carrera del Pavo', fecha: 'Noviembre', status: 'future', img: 'https://images.unsplash.com/photo-1507034589631-9433c6bc453e?auto=format&fit=crop&w=400&q=60'},
-            {id: '08', nombre: '10K Aniversario', fecha: 'Diciembre', status: 'future', img: 'https://images.unsplash.com/photo-1467307983825-619715426c70?auto=format&fit=crop&w=400&q=60'},
-            {id: '09', nombre: 'Santa Run', fecha: 'Diciembre', status: 'future', img: 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=400&q=60'},
-            {id: '10', nombre: 'Final de Campeones', fecha: 'Enero 2027', status: 'future', img: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=400&q=60'}
+            {id: '05', nombre: 'Medio Maratón Ens', fecha: 'Septiembre', status: 'future', img: 'https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?auto=format&fit=crop&w=400&q=60'}
         ];
 
         const carrusel = document.getElementById('carrusel');
         etapas.forEach(etapa => {
             const card = document.createElement('div');
-            card.className = `min-w-[300px] snap-center p-8 rounded-[2rem] border transition-all duration-500 relative overflow-hidden flex flex-col justify-between h-[300px] ${
-                etapa.status === 'next' ? 'scale-105 shadow-2xl shadow-rose-600/30' : 'opacity-60 grayscale'
-            }`;
+            card.className = `min-w-[300px] snap-center p-8 rounded-[2rem] border transition-all duration-500 relative overflow-hidden flex flex-col justify-between h-[300px] ${etapa.status === 'next' ? 'scale-105 shadow-2xl shadow-rose-600/30 border-rose-600' : 'opacity-60 grayscale border-white/10'}`;
             card.innerHTML = `
                 <div class="absolute inset-0 z-0">
-                    <img src="${etapa.img}" class="w-full h-full object-cover opacity-40 hover:opacity-60 transition duration-700">
+                    <img src="${etapa.img}" class="w-full h-full object-cover opacity-40">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                 </div>
-                <div class="relative z-10 text-white">
+                <div class="relative z-10">
                     <div class="flex justify-between items-start mb-6">
                         <span class="font-sport text-4xl opacity-30 text-white">${etapa.id}</span>
-                        <span class="text-[9px] font-black uppercase tracking-widest ${etapa.status === 'next' ? 'bg-rose-600 text-white' : 'bg-white/10 text-white'} px-3 py-1 rounded-full border border-white/20">${etapa.fecha}</span>
+                        <span class="text-[9px] font-black uppercase tracking-widest ${etapa.status === 'next' ? 'bg-rose-600 text-white' : 'bg-white/10'} px-3 py-1 rounded-full border border-white/20">${etapa.fecha}</span>
                     </div>
                     <h4 class="text-xl font-extrabold leading-tight mb-6 uppercase italic text-white">${etapa.nombre}</h4>
                 </div>
                 <div class="relative z-10">
-                    <button class="w-full py-3 rounded-xl font-black text-[10px] uppercase tracking-wider transition ${
-                        etapa.status === 'next' ? 'bg-white text-black hover:bg-rose-600 hover:text-white' : 'bg-white/5 text-white/40 border border-white/10'
-                    }">Ver Detalles</button>
-                </div>
-            `;
+                    <button class="w-full py-3 rounded-xl font-black text-[10px] uppercase tracking-wider transition ${etapa.status === 'next' ? 'bg-white text-black' : 'bg-white/5 text-white/40 border border-white/10'}">Ver Detalles</button>
+                </div>`;
             carrusel.appendChild(card);
         });
 
-        // Función de Conexión con Replit
-        async function subirYSearchear(event) {
+        // FUNCIÓN DE BÚSQUEDA SIMULADA (FALL-PROOF PARA DEMO)
+        function subirYSearchear(event) {
             const file = event.target.files[0];
             if (!file) return;
 
@@ -167,42 +155,34 @@
             const grid = document.getElementById('gridResultados');
             const sectionResultados = document.getElementById('resultadosBusqueda');
 
+            // 1. Efecto Visual de Carga
             loader.classList.remove('hidden');
-            btnText.innerText = "PROCESANDO IA...";
+            btnText.innerText = "IDENTIFICANDO ROSTRO...";
 
-            const formData = new FormData();
-            formData.append('file', file);
+            // 2. Simulación de procesamiento de IA (2.2 segundos)
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                grid.innerHTML = '';
 
-            try {
-                // USANDO TU ENLACE DE REPLIT
-                const response = await fetch('https://ccdf990a-dbd6-4c03-8544-5d1384224067-00-3fhwwz6vpcd9g.picard.replit.dev/buscar', {
-                    method: 'POST',
-                    body: formData
+                // Nombres de tus archivos en la raíz de Vercel
+                const fotosVictor = [
+                    'victor1.jpg', 'victor2.jpg', 'victor3.jpg', 'victor4.jpg',
+                    'victor5.jpg', 'victor6.jpg', 'victor7.jpg', 'victor8.jpg'
+                ];
+
+                // 3. Renderizar fotos con animación de entrada
+                fotosVictor.forEach((foto, i) => {
+                    grid.innerHTML += `
+                        <div class="aspect-square bg-zinc-900 rounded-xl overflow-hidden border-2 border-rose-600 animate-fade-in" style="animation-delay: ${i * 0.1}s">
+                            <img src="${foto}" class="w-full h-full object-cover shadow-2xl" onerror="this.src='https://via.placeholder.com/400x400?text=Error+Carga+Foto'">
+                        </div>`;
                 });
-                
-                const data = await response.json();
-                loader.classList.add('hidden');
-                
-                if (data.success) {
-                    grid.innerHTML = '';
-                    data.fotos.forEach((foto, i) => {
-                        grid.innerHTML += `
-                            <div class="aspect-square bg-zinc-900 rounded-xl overflow-hidden border-2 border-rose-600 animate-fade-in" style="animation-delay: ${i * 0.1}s">
-                                <img src="${foto}" class="w-full h-full object-cover">
-                            </div>
-                        `;
-                    });
-                    sectionResultados.classList.remove('hidden');
-                    sectionResultados.scrollIntoView({ behavior: 'smooth' });
-                    btnText.innerText = "¡BÚSQUEDA EXITOSA!";
-                } else {
-                    btnText.innerText = data.error || "SIN RESULTADOS";
-                }
-            } catch (error) {
-                console.error("Error:", error);
-                loader.classList.add('hidden');
-                btnText.innerText = "ERROR DE CONEXIÓN";
-            }
+
+                // 4. Mostrar sección y desplazar suavemente
+                sectionResultados.classList.remove('hidden');
+                sectionResultados.scrollIntoView({ behavior: 'smooth' });
+                btnText.innerText = "¡BÚSQUEDA EXITOSA!";
+            }, 2200);
         }
     </script>
 </body>
